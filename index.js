@@ -53,7 +53,7 @@ app.use(express.json())
 app.use(
   morgan(':method :url :status :res[content-length] - :response-time ms :data')
 )
-//app.use(express.static('dist'))
+app.use(express.static('dist'))
 
 //root
 app.get('/', (request, response) => {
